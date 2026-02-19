@@ -43,7 +43,7 @@ class MyThread2 extends Thread {
 
 public class SynchronizationDemo {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
 
         Table tbl = new Table();
 
@@ -51,6 +51,9 @@ public class SynchronizationDemo {
         MyThread2 t2 = new MyThread2(tbl);
 
         t1.start();
+        t1.join();   // wait until t1 finishes
+
         t2.start();
+        t2.join();   // wait until t2 finishes
     }
 }
