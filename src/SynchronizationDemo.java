@@ -8,12 +8,7 @@ class Table {
 
 		for(int i=1;i<=5;i++){
 
-			System.out.print(n*i);
-			if(i!=n){
-
-				System.out.print(" ");
-
-			}
+			System.out.print(n*i+" ");
 			try{
 
 				Thread.sleep(400);
