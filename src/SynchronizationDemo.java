@@ -20,10 +20,11 @@ class Table {
 				Thread.sleep(400);
 
 			}catch(InterruptedException e){
-
-				System.out.println(e);
-
+  				Thread.currentThread().interrupt();
 			}
+
+
+			
 
 		}
 		System.out.println();
